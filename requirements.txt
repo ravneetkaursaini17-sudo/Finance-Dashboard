@@ -13,3 +13,4 @@ plotly
 requests
 Pillow
 pandas_ta
+nycflights13
