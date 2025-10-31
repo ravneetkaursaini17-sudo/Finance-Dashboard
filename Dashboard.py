@@ -321,7 +321,7 @@ if selected_project == "Multi Asset Portfolio Analysis":
         for portfolio, values in beta_alpha.items():
             st.write(f"**{portfolio}** — Beta: `{values['Beta']:.4f}`, Alpha: `{values['Alpha']:.4f}`")
         
-f selected_project == "Technical Analysis":
+if selected_project == "Technical Analysis":
     with st.expander("Technical Analysis"):
     # ✅ Load data safely once per session
         if ta.gs is None or ta.ms is None or ta.adj_close is None:
