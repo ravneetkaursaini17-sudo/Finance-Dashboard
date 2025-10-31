@@ -7,8 +7,9 @@ seaborn
 PyPortfolioOpt
 scipy
 mplfinance
-statsmodel
-openyxl
+statsmodels
+openpyxl
 plotly
 requests
 Pillow
+pandas_ta
