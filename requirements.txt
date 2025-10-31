@@ -6,3 +6,9 @@ matplotlib
 seaborn
 PyPortfolioOpt
 scipy
+mplfinance
+statsmodel
+openyxl
+plotly
+requests
+Pillow
