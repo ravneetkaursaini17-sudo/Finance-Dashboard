@@ -12,5 +12,5 @@ openpyxl
 plotly
 requests
 Pillow
-pandas_ta
+pandas_ta_classic
 nycflights13
