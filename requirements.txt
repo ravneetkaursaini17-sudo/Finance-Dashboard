@@ -6,3 +6,4 @@ matplotlib
 seaborn
 PyPortfolioOpt
 scipy
+statsmodels
