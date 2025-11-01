@@ -323,7 +323,12 @@ if selected_project == "Multi Asset Portfolio Analysis":
         
 if selected_project == "Technical Analysis":
     with st.expander("Technical Analysis"):
-    
+    # ✅ Load data safely once per session
+        if ta.gs is None or ta.ms is None or ta.adj_close is None:
+            with st.spinner("Loading market data..."):
+                ta.load_and_prepare_data()
+                st.success("Data loaded successfully ✅")
+
         # 📘 Project Summary
         st.markdown("""
         ### 📈 Technical Analysis of Goldman Sachs & Morgan Stanley
@@ -351,16 +356,52 @@ if selected_project == "Technical Analysis":
         This project demonstrates practical application of technical indicators for signal generation, trend analysis, and volatility assessment in equity markets.
         """)
         
-        st.write("Applied RSI, MACD, and Bollinger Bands to identify trading signals.")
-        st.pyplot(ta.get_technical_chart())
         st.metric("Signal Accuracy", f"{ta.signal_accuracy:.2%}")
-        st.pyplot(ta.get_rsi_chart())
-        st.pyplot(ta.get_macd_chart())
-        st.pyplot(ta.get_bollinger_chart())
-        st.pyplot(ta.get_dema_chart())
-        st.pyplot(ta.get_adx_chart())
-        st.pyplot(ta.get_moving_avg_variations_chart())
+        
+        # ✅ Chart rendering with error handling
+        try:
+            st.pyplot(ta.get_technical_chart())
+        except Exception as e:
+            st.error(f"Error loading technical chart: {e}")
+
+        st.metric("Signal Accuracy", f"{ta.signal_accuracy:.2%}")
+
+        try:
+            st.pyplot(ta.get_rsi_chart())
+        except Exception as e:
+            st.error(f"Error loading RSI chart: {e}")
+
+        try:
+            st.pyplot(ta.get_macd_chart())
+        except Exception as e:
+            st.error(f"Error loading MACD chart: {e}")
+
+        try:
+            st.pyplot(ta.get_bollinger_chart())
+        except Exception as e:
+            st.error(f"Error loading Bollinger chart (GS): {e}")
+
+        try:
+            st.pyplot(ta.get_bollinger_chart_ms())
+        except Exception as e:
+            st.error(f"Error loading Bollinger chart (MS): {e}")
+
+        try:
+            st.pyplot(ta.get_dema_chart())
+        except Exception as e:
+            st.error(f"Error loading DEMA chart: {e}")
+
+        try:
+            st.pyplot(ta.get_adx_chart())
+        except Exception as e:
+            st.error(f"Error loading ADX chart: {e}")
+
+        try:
+            st.pyplot(ta.get_moving_avg_variations_chart())
+        except Exception as e:
+            st.error(f"Error loading moving average variations chart: {e}")
     
+
 
 
 
