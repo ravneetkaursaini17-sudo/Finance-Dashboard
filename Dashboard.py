@@ -35,7 +35,7 @@ st.set_page_config(
 import multi_asset_portfolio_analysis as ma
 import multi_sector_portfolio_analysis as ms
 import technical_analysis as ta
-import nyc_flight_delay_analysis as nyc
+
 
 
 
@@ -80,7 +80,7 @@ st.markdown("""
 # ✅ Sidebar
 st.sidebar.image("ravneet_profile.jpeg", use_container_width=True)
 st.sidebar.title("Ravneet Kaur Saini")
-st.sidebar.markdown("**Finance Graduate** | **AP/AR Specialist** | **Python Financial Modelling Projects**")
+st.sidebar.markdown("**Financial Analyst** | FP&A • Forecasting • P&L Analysis • AP/AR | Excel • SQL • Python • Power BI")
 
 
 # 📬 Contact Me
@@ -93,60 +93,82 @@ st.sidebar.markdown("""
 
 #skills
 st.sidebar.info("""
-### 🧠 Skills
-- 📊 Valuation Techniques (DCF, DDM, Monte Carlo)  
-- 🐍 Python for Analytics & Visualization  
-- 📈 Excel Modeling & Bloomberg Terminal  
-- 🎨 Streamlit Dashboard Customization  
-- ⚖️ Derivatives Trading & Risk Management  
-- 📝 Report Writing & Data Presentation
+### Skills 
+- 📊 Financial Modeling (DCF, DDM, Scenario & Sensitivity Analysis) 
+- 🐍 Python for Data Analysis, Forecasting & Visualization 
+- 📈 Advanced Excel (Modeling, Power Query, Automation) 
+- 📊 Power BI & Streamlit Dashboard Development 
+- ⚖️ Risk Analysis, Derivatives & Portfolio Concepts
+ - 📝 Management Reporting & Data Storytelling
 """)
 
 # Main Section
 
 st.title("📊 Ravneet Kaur Saini — Finance & Analytics Portfolio")
+
 st.header("About Me")
 st.write("""
-Hello, I'm **Ravneet Kaur Saini**, a finance graduate with a passion for turning data into decisions. My journey spans from accounting fundamentals in India to advanced financial modeling in the U.S., and I thrive in roles that demand precision, integrity, and strategic thinking.
+I’m **Ravneet Kaur Saini**, a finance professional with a strong foundation in accounting, 
+financial analysis, and data-driven decision support. My background spans hands-on AP/AR 
+experience, advanced financial modeling, and analytics-driven insights built through 
+Python, Excel, and BI tools.
 
-🔍 I specialize in:
-- Financial reporting and reconciliation
-- Python-based valuation and dashboarding
-- Derivatives trading and risk analysis
+I bring a blend of **technical capability and financial discipline**, with experience 
+supporting reporting cycles, building forecasting models, and developing dashboards that 
+translate complex data into clear business intelligence.
 
-💡 I’ve built dashboards that visualize portfolio performance, forecast risk, and uncover trading signals all grounded in real-world data.
+### 🔍 Core Strengths
+- Financial reporting, reconciliations, and AP/AR operations  
+- Python-based financial modeling, valuation, and automation  
+- Forecasting, variance analysis, and performance dashboards  
+- Risk analysis, derivatives concepts, and scenario modeling  
 
-🎯 I’m actively seeking entry-level roles where I can grow as a:
-- Financial Analyst
-- Credit/Risk Analyst
-- AP/AR Specialist
+### 💡 What I Build
+I’ve developed interactive dashboards and analytical tools that visualize portfolio 
+performance, forecast financial outcomes, and uncover actionable insights using real-world 
+datasets. My work focuses on clarity, accuracy, and strategic value.
 
-Let’s connect and explore how I can contribute to your team with data-driven insights and a resilient mindset.
+### 🎯 What I’m Seeking
+I’m actively pursuing opportunities where I can contribute to high-impact finance teams, 
+particularly roles such as:
+- Financial Analyst  
+- FP&A / Reporting Analyst  
+- Credit or Risk Analyst  
+- AP/AR or Accounting Analyst  
+
+I’m driven, detail-oriented, and committed to delivering insights that support smarter, 
+faster business decisions. Let’s connect and explore how I can add value to your team.
 """)
+
 
 
 st.header("💼 Professional Experience")
 
 with st.expander("US Med-Equip (Houston, TX) — Accounts Receivable Specialist Intern"):
-    st.write("""
-    My internship at US Med-Equip gave me hands-on exposure to U.S. healthcare finance operations. I worked on ACH migration, AR collections, and vendor compliance — all within a fast-paced, data-driven environment. This experience sharpened my reporting skills and introduced me to real-world reconciliation challenges.
-    """)
-    st.markdown("""
-    - 🗂️ Migrated ACH processes and streamlined AR collections  
-    - 📊 Produced vendor compliance reports and reconciled balances  
-    - 🌎 U.S. healthcare finance experience with operational impact  
-    """)
+  st.write(""" 
+    My internship at **US Med‑Equip** gave me hands‑on exposure to U.S. healthcare finance operations, where I supported ACH migration, AR collections, and vendor compliance in a high‑volume, fast‑paced environment. I strengthened my reconciliation and reporting capabilities while contributing to smoother cash‑flow processes and cleaner financial data. """)
+  st.markdown(""" 
+- 🗂️ Supported ACH migration and improved AR collections efficiency 
+- 📊 Produced vendor compliance reports and resolved reconciliation discrepancies
+- 🌎 Gained U.S. healthcare finance experience with measurable operational impact
+  """)
 
 with st.expander("Agarwal Mathur & Associates (India) — Finance Executive"):
     st.write("""
-    Before moving to the U.S., I worked as a Finance Executive in India where I prepared financial statements, supported audit readiness, and contributed to business planning. This role built my foundation in accounting, compliance, and client-facing documentation — skills I now apply in portfolio analysis and financial modeling.
-    """)
-    st.markdown("""
-    - 📄 Drafted financial statements and audit documentation  
-    - 🧾 Ensured regulatory compliance and supported tax filings  
-    - 📈 Contributed to business plans and financial forecasts  
-    - 🇮🇳 Indian finance experience with strong accounting fundamentals  
-    """)
+Before moving to the U.S., I worked as a **Finance Executive in India**, where I managed 
+core accounting functions, prepared financial statements, and supported audit readiness 
+for client portfolios. I gained hands‑on experience in compliance, reconciliations, and 
+financial planning—building a strong foundation that now supports my work in modeling, 
+analysis, and portfolio evaluation.
+""")
+
+st.markdown("""
+- 📄 Prepared financial statements, schedules, and audit‑ready documentation  
+- 🧾 Ensured regulatory compliance and supported GST/tax filing processes  
+- 📈 Assisted in business planning, budgeting, and financial forecasting  
+- 🇮🇳 Developed strong accounting fundamentals through India’s finance and compliance framework  
+""")
+
 
 
 
@@ -201,12 +223,14 @@ with col6:
     **MS in Finance**  
     *University at Buffalo, SUNY*  
     📍 Location: Buffalo, NY, USA  
-    🗓️ Duration: 2 Years  
-    💼 Focus: Financial Modeling, Derivatives, Portfolio Management  
+    🗓️ Duration: 1.5 Years  
+    📘 Key Coursework: Financial Modeling, Derivatives, Portfolio Management, Risk Analytics 
+    🛠️ Tools: Excel (Advanced), Python, Bloomberg Terminal 
+    📊 Highlight: Built valuation models and multi‑factor portfolio strategies as part of capstone projects
     """)
 
 st.markdown("---")
-st.success("Building hands-on experience while completing MS in Finance, focused on practical applications in investment and analytics.")
+st.success("Completed my MS in Finance, developing advanced skills in financial modeling, forecasting, and data-driven decision support for corporate finance roles.")
 
 
 st.header("📊 Projects")
@@ -215,7 +239,6 @@ st.subheader("🎓 Academic Projects & 🐍 Python Dashboards")
 project_options = [
     "Select a Project",
     "Academic Valuation Projects",
-    "NYC Flight Delay Analysis",
     "Multi Asset Portfolio Analysis",
     "Technical Analysis",
     "Portfolio Construction and Optimisation",
@@ -251,18 +274,7 @@ if selected_project == "Academic Valuation Projects":
     - 📅 Status: Completed
     """)
 
-if selected_project == "NYC Flight Delay Analysis":
-    with st.expander("NYC Flight Delay Analysis"):
-        st.markdown("""
-        This project analyzes flight delay patterns across New York City airports using historical flight data.  
-        The goal was to identify delay trends, highlight the most affected airlines and routes, and summarize key performance metrics.  
-        Techniques used include data cleaning, aggregation, and visualization using Python libraries such as Pandas, Matplotlib, and Seaborn.
-        """)
 
-        st.pyplot(nyc.get_delay_chart())
-        st.dataframe(nyc.get_top_delayed_flights())
-        metrics = nyc.get_summary_metrics()
-   
     
 
 if selected_project == "Multi Asset Portfolio Analysis":
@@ -323,12 +335,7 @@ if selected_project == "Multi Asset Portfolio Analysis":
         
 if selected_project == "Technical Analysis":
     with st.expander("Technical Analysis"):
-    # ✅ Load data safely once per session
-        if ta.gs is None or ta.ms is None or ta.adj_close is None:
-            with st.spinner("Loading market data..."):
-                ta.load_and_prepare_data()
-                st.success("Data loaded successfully ✅")
-
+    
         # 📘 Project Summary
         st.markdown("""
         ### 📈 Technical Analysis of Goldman Sachs & Morgan Stanley
@@ -356,52 +363,16 @@ if selected_project == "Technical Analysis":
         This project demonstrates practical application of technical indicators for signal generation, trend analysis, and volatility assessment in equity markets.
         """)
         
+        st.write("Applied RSI, MACD, and Bollinger Bands to identify trading signals.")
+        st.pyplot(ta.get_technical_chart())
         st.metric("Signal Accuracy", f"{ta.signal_accuracy:.2%}")
-        
-        # ✅ Chart rendering with error handling
-        try:
-            st.pyplot(ta.get_technical_chart())
-        except Exception as e:
-            st.error(f"Error loading technical chart: {e}")
-
-        st.metric("Signal Accuracy", f"{ta.signal_accuracy:.2%}")
-
-        try:
-            st.pyplot(ta.get_rsi_chart())
-        except Exception as e:
-            st.error(f"Error loading RSI chart: {e}")
-
-        try:
-            st.pyplot(ta.get_macd_chart())
-        except Exception as e:
-            st.error(f"Error loading MACD chart: {e}")
-
-        try:
-            st.pyplot(ta.get_bollinger_chart())
-        except Exception as e:
-            st.error(f"Error loading Bollinger chart (GS): {e}")
-
-        try:
-            st.pyplot(ta.get_bollinger_chart_ms())
-        except Exception as e:
-            st.error(f"Error loading Bollinger chart (MS): {e}")
-
-        try:
-            st.pyplot(ta.get_dema_chart())
-        except Exception as e:
-            st.error(f"Error loading DEMA chart: {e}")
-
-        try:
-            st.pyplot(ta.get_adx_chart())
-        except Exception as e:
-            st.error(f"Error loading ADX chart: {e}")
-
-        try:
-            st.pyplot(ta.get_moving_avg_variations_chart())
-        except Exception as e:
-            st.error(f"Error loading moving average variations chart: {e}")
+        st.pyplot(ta.get_rsi_chart())
+        st.pyplot(ta.get_macd_chart())
+        st.pyplot(ta.get_bollinger_chart())
+        st.pyplot(ta.get_dema_chart())
+        st.pyplot(ta.get_adx_chart())
+        st.pyplot(ta.get_moving_avg_variations_chart())
     
-
 
 
 
@@ -642,7 +613,7 @@ if selected_project == "Multi-Sector Portfolio Analysis":
 
 
 st.markdown("---")
-st.success("Thanks for visiting my dashboard! Let’s connect and explore opportunities in finance and analytics.")
+st.success("Thank you for visiting my dashboard. I welcome connections and opportunities in finance, FP&A, and analytics-driven roles.")
 
 
 
